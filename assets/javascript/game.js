@@ -17,6 +17,8 @@ function begin()
     document.getElementById("answer").innerHTML = s;
     )
 
+
+ )
 function letter = document.getElementById("letter").value;
 if (letter.length > 0)
     (

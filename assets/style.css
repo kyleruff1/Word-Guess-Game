@@ -1,0 +1,30 @@
+.jumbotron {
+    background-position: center;
+    background-size:100%;
+    background-image: url(/assets/images/Panorama+90per+01.jpg);
+    background-size: 100%;
+
+}
+.jumbotron2  {
+
+    color: white;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    background: black;
+
+}
+
+.display-3   {
+    opacity: 22%;
+    background: black;
+    height: fit-content;
+
+}
+
+.container   {
+
+}
+
+.lead  {
+
+}
