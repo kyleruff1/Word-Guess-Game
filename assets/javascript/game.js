@@ -1,40 +1,12 @@
-var wordList = ["JohnSnow", "Tyrion", "LittleFinger", "Unsullied", "Night King", "wine" ];
-var randomizer = wordList[Math.floor.random() * randomizerArray.length)];
+// create an array of words
+const words = ['strike', 'spare', 'split', 'gutter', 'foul', 'polish', 'oil'];
+// choose word randomly
+let randomNumber = Math.floor(Math.random() * words.length);
+let chosenWord = words[randomNumber];
+console.log(chosenWord);
+// create underscores based on length of word
+// get user's guess
+// check if guess is right
+// if guess is right, add to correct array
+// if wrong, push to wrong array
 
-var s;
-var count = 0;
-var answerArray = [];
-
-function begin()
-    (
-        for (var i = 0; i < randomizer.length; i++)
-    (
-        answerArray[i] = "_";
-
-    )
-    
-    s = answerArray.join(" ");
-    document.getElementById("answer").innerHTML = s;
-    )
-
-
- )
-function letter = document.getElementById("letter").value;
-if (letter.length > 0)
-    (
-        for (var i = 0; i <randomizer.length; i++)
-    (
-        if (randomizer[i] === letter)
-        (
-            answerArray[i] = letter;
-        )
-    )
-    count++;
-    document.getElementById("counter").innerHTML = "no. of clicks: " + count;
-    document.getElementById("answer").innerHTML = answerArray.join(" ");
-    )
-    if(count++;
-        document.getElementById("counter").innerHTML = "youre taking too long");
-        )
-    )
-    

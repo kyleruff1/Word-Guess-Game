@@ -1,30 +1,50 @@
-.jumbotron {
-    background-position: center;
-    background-size:100%;
-    background-image: url(/assets/images/Panorama+90per+01.jpg);
-    background-size: 100%;
-
-}
-.jumbotron2  {
-
-    color: white;
-    font-family: 'Monoton', cursive;
+header  {
+     height: 150px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 20px;
     text-align: center;
-    background: black;
+    border-color: darkslategrey;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.underscore     {
+    height: 80px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 80px;
+    text-align: center;
+    border-color: darkslategrey;
+    width: 90%;
+    margin: 0px auto;
+
 
 }
 
-.display-3   {
-    opacity: 22%;
-    background: black;
-    height: fit-content;
+.rightguess     {
+    height: 80px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 20px;
+    text-align: center;
+    border-color: darkslategrey;
+    width: 90%;
+    margin: 0px auto;
+    color: green;
+
 
 }
 
-.container   {
-
-}
-
-.lead  {
+.wrongguess     {
+    height: 80px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 20px;
+    text-align: center;
+    border-color: darkslategrey;
+    width: 90%;
+    margin: 0px auto;
+    color: red;
 
 }
