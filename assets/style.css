@@ -9,7 +9,7 @@ header  {
     width: 90%;
     margin: 0px auto;
     font-family: 'Cinzel', serif;
-    background-image: url(/assets/images/Panorama+90per+01.jpg);
+    background-image: url(/assets/images/Panorama+90per+01.JPG);
     background-size: 100%;
     text-decoration-line: underline;
     text-shadow: 3px 3px white;
@@ -41,6 +41,7 @@ header  {
 
 .underscores     {
     background-color: bisque;
+    font-weight: bolder;
     height: 80px;
     border-style: solid;
     border-width: 2px;

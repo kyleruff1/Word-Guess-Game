@@ -28,14 +28,14 @@ console.log(chosenWord);
 
 // create underscores based on length of word
 var generateUnderscore = () => {
-    for(let i = 0; i < chosenWord.length; i++) {
+    for(var i = 0; i < chosenWord.length; i++) {
         underScore.push('_');
         
     }
     return underScore;
 }
-console.log(underScore);
 
+console.log(generateUnderscore());
 
 // get user's guess
 document.addEventListener('keypress', (event) => {
@@ -50,9 +50,9 @@ document.addEventListener('keypress', (event) => {
         docRightGuess[0].innerHTML = rightWord.join(',');
         // checks to see if user word matches guesses
         if(underScore.join('') == chosenWord) {
-            alert('you friggin win!')
+            confirm('you friggin win!, play again?')
         }
-        console.log(rightWord);
+
     } 
 
         else {
