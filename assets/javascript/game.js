@@ -11,7 +11,9 @@ let underScore = [];
 
 // dom manipulation
 
-let underScoreDiv = document.getElementById(.underscores)
+let docUnderscore = document.getElementsByClassName('underscores');
+let docRightGuess = document.getElementsByClassName('rightguess');
+let docWrongGuess = document.getElementsByClassName('wrongguess');
 // testing
 console.log(chosenWord);
 
@@ -19,20 +21,25 @@ console.log(chosenWord);
 let generateUnderscore = () => {
     for(let i = 0; i < chosenWord.length; i++) {
         underScore.push('_');
+        docUnderscore[0].innerHTML = generateUnderscore().join('');
         
     }
     return underScore;
 }
 
-console.log(generateUnderscore());
+
 // get user's guess
 document.addEventListener('keypress', (event) => {
     let keyWord = String.fromCharCode(event.keyCode);
     // if user's guess is right
+
     if(chosenWord.indexOf(keyWord) > -1) {
         rightWord.push(keyWord);
 
         underScore[chosenWord.indexOf(keyWord)] = keyWord;
+        docUnderscore[0].innerHTML = underScore.join(' ');
+        docRightGuess[0].innerHTML = rightWord.join(' ');
+        // checks to see if user word matches guesses
         if(underScore.join('') == chosenWord) {
             alert('you friggin win!')
         }
@@ -41,10 +48,13 @@ document.addEventListener('keypress', (event) => {
 
         else {
         wrongWord.push(keyWord);
-            console.log(wrongWord);
-}
-       
+            docWrongGuess[0].innerHTML = wrongWord.join(' ');
+        }
+
+
 });
+
+
 // check if guess is right
 // if guess is right, add to correct array
 // if wrong, push to wrong array

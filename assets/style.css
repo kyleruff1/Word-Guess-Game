@@ -9,7 +9,7 @@ header  {
     margin: 0px auto;
 }
 
-.underscore     {
+.underscores     {
     height: 80px;
     border-style: solid;
     border-width: 2px;
@@ -18,6 +18,7 @@ header  {
     border-color: darkslategrey;
     width: 90%;
     margin: 0px auto;
+    color: black;
 
 
 }
