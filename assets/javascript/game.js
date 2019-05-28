@@ -1,5 +1,5 @@
 // create an array of words
-const word = ['strike', 'spare', 'split', 'gutter', 'foul', 'polish', 'oil'];
+const word = ['strike', 'spare', 'split', 'bowl', 'foul', 'polish', 'oil'];
 // choose word randomly
 let randomNumber = Math.floor(Math.random() * word.length);
 let chosenWord = word[randomNumber];
@@ -21,7 +21,6 @@ console.log(chosenWord);
 let generateUnderscore = () => {
     for(let i = 0; i < chosenWord.length; i++) {
         underScore.push('_');
-        docUnderscore[0].innerHTML = generateUnderscore().join('');
         
     }
     return underScore;
@@ -37,8 +36,8 @@ document.addEventListener('keypress', (event) => {
         rightWord.push(keyWord);
 
         underScore[chosenWord.indexOf(keyWord)] = keyWord;
-        docUnderscore[0].innerHTML = underScore.join(' ');
-        docRightGuess[0].innerHTML = rightWord.join(' ');
+        docUnderscore[0].innerHTML = underScore.join('  ');
+        docRightGuess[0].innerHTML = rightWord.join(',');
         // checks to see if user word matches guesses
         if(underScore.join('') == chosenWord) {
             alert('you friggin win!')
@@ -48,7 +47,7 @@ document.addEventListener('keypress', (event) => {
 
         else {
         wrongWord.push(keyWord);
-            docWrongGuess[0].innerHTML = wrongWord.join(' ');
+            docWrongGuess[0].innerHTML = wrongWord.join(',');
         }
 
 
