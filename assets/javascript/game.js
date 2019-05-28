@@ -1,11 +1,16 @@
 // create an array of words
 const word = ['strike', 'spare', 'split', 'bowl', 'foul', 'polish', 'oil'];
+const maxTries = 10;
 // choose word randomly
-let randomNumber = Math.floor(Math.random() * word.length);
-let chosenWord = word[randomNumber];
-let rightWord = [];
-let wrongWord = [];
-let underScore = [];
+var randomNumber = Math.floor(Math.random() * word.length);
+var chosenWord = word[randomNumber];
+var rightWord = [];
+var wrongWord = [];
+var underScore = [];
+var guessesLeft = 0;
+var gameStarted = false;
+var hasFinished = false;
+var wins = 0;
 
 
 
@@ -14,17 +19,22 @@ let underScore = [];
 let docUnderscore = document.getElementsByClassName('underscores');
 let docRightGuess = document.getElementsByClassName('rightguess');
 let docWrongGuess = document.getElementsByClassName('wrongguess');
+let remaingLetters = document.getElementsByClassName('remaining');
+let resetGame = document.getElementsByClassName('reset');
+
+
 // testing
 console.log(chosenWord);
 
 // create underscores based on length of word
-let generateUnderscore = () => {
+var generateUnderscore = () => {
     for(let i = 0; i < chosenWord.length; i++) {
         underScore.push('_');
         
     }
     return underScore;
 }
+console.log(underScore);
 
 
 // get user's guess
