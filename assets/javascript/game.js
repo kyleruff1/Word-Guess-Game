@@ -1,5 +1,5 @@
 // create an array of words
-const word = ['strike', 'spare', 'split', 'bowl', 'foul', 'polish', 'oil'];
+const word = ['line', 'spare', 'split', 'bowl', 'foul', 'polish', 'game', 'lane', 'strike', 'turkey', 'double', '300'];
 const maxTries = 10;
 // choose word randomly
 var randomNumber = Math.floor(Math.random() * word.length);
@@ -40,7 +40,7 @@ console.log(generateUnderscore());
 // get user's guess
 document.addEventListener('keypress', (event) => {
     let keyWord = String.fromCharCode(event.keyCode);
-    // if user's guess is right
+    // if user's guess is right push to right array
 
     if(chosenWord.indexOf(keyWord) > -1) {
         rightWord.push(keyWord);
@@ -54,7 +54,7 @@ document.addEventListener('keypress', (event) => {
         }
 
     } 
-
+// if wrong, push to wrong array
         else {
         wrongWord.push(keyWord);
             docWrongGuess[0].innerHTML = wrongWord.join(',');
@@ -64,6 +64,6 @@ document.addEventListener('keypress', (event) => {
 });
 
 
-// check if guess is right
-// if guess is right, add to correct array
-// if wrong, push to wrong array
+
+
+
