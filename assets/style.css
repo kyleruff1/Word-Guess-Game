@@ -9,7 +9,7 @@ header  {
     width: 90%;
     margin: 0px auto;
     font-family: 'Cinzel', serif;
-    background-image: url(/assets/images/pinorama.jpg);
+    background-image: url(assets/images/pinorama.jpg);
     background-size: 100%;
     text-decoration-line: underline;
     text-shadow: 3px 3px white;
@@ -92,7 +92,7 @@ header  {
 }
 
 body    {
-    background-image: url(/assets/images/background.jpg);
+    background-image: url(assets/images/background.jpg);
     background-size: 100%;
 }
 
