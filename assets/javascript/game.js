@@ -51,7 +51,7 @@ document.addEventListener('keypress', (event) => {
         docRightGuess[0].innerHTML = rightWord.join(',');
         // checks to see if user word matches guesses
         if(underScore.join('') == chosenWord) {
-            window.location.href = "../index.html";
+            window.location.href = "./index.html";
             confirm('you friggin win!, play again?')
             
             
