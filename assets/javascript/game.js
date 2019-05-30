@@ -20,7 +20,7 @@ let docUnderscore = document.getElementsByClassName('underscores');
 let docRightGuess = document.getElementsByClassName('rightguess');
 let docWrongGuess = document.getElementsByClassName('wrongguess');
 let remaingLetters = document.getElementsByClassName('remaining');
-let resetGame = document.getElementsByClassName('reset');
+let docCountScore = document.getElementsByClassName('score');
 
 
 // testing
@@ -46,11 +46,15 @@ document.addEventListener('keypress', (event) => {
         rightWord.push(keyWord);
 
         underScore[chosenWord.indexOf(keyWord)] = keyWord;
+        
         docUnderscore[0].innerHTML = underScore.join('  ');
         docRightGuess[0].innerHTML = rightWord.join(',');
         // checks to see if user word matches guesses
         if(underScore.join('') == chosenWord) {
+            window.location.href = "../index.html";
             confirm('you friggin win!, play again?')
+            
+            
         }
 
     } 
