@@ -1,5 +1,5 @@
 // create an array of words
-const word = ['line', 'spare', 'split', 'bowl', 'foul', 'polish', 'game', 'lane', 'strike', 'turkey', 'double', '300'];
+const word = ['line', 'spare', 'split', 'bowl', 'foul', 'polish', 'game', 'lane', 'strike', 'turkey', 'double'];
 const maxTries = 10;
 // choose word randomly
 var randomNumber = Math.floor(Math.random() * word.length);
